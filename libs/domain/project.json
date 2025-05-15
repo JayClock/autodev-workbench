@@ -1,0 +1,27 @@
+{
+  "name": "@autodev/domain",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/domain/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/domain",
+        "tsConfig": "libs/domain/tsconfig.lib.json",
+        "packageJson": "libs/domain/package.json",
+        "main": "libs/domain/src/index.ts",
+        "assets": ["libs/domain/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/domain/jest.config.ts"
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@autodev/domain": ["libs/domain/src/index.ts"],
       "@autodev/context-mcp": ["packages/context-mcp/src/index.ts"],
       "@autodev/context-worker": ["packages/context-worker/src/index.ts"],
       "@autodev/worker-core": ["packages/worker-core/src/index.ts"],
