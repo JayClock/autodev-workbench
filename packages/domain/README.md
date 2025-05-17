@@ -1,9 +1,16 @@
 # domain
 
 ```plantuml
-class User {}
+class User {
+   id: string
+   name: string
+   email: string
+}
 
-class Project {}
+class Project {
+    id: string
+    name: string
+}
 
 User "1" -- "*" Project
 ```
