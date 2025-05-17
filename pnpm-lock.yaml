@@ -351,6 +351,25 @@ importers:
         specifier: ^2.3.0
         version: 2.8.1
 
+  packages/persistent:
+    dependencies:
+      '@prisma/client':
+        specifier: ^6.7.0
+        version: 6.7.0(prisma@6.7.0(typescript@5.8.3))(typescript@5.8.3)
+      inversify:
+        specifier: ^6.0.2
+        version: 6.2.2(reflect-metadata@0.2.2)
+      reflect-metadata:
+        specifier: ^0.2.2
+        version: 0.2.2
+      tslib:
+        specifier: ^2.3.0
+        version: 2.8.1
+    devDependencies:
+      prisma:
+        specifier: ^6.7.0
+        version: 6.7.0(typescript@5.8.3)
+
   packages/web:
     dependencies:
       '@ai-sdk/openai':

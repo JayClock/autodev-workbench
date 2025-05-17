@@ -1,6 +1,6 @@
 import {NextResponse} from 'next/server';
 import {Status} from '@prisma/client';
-import {prisma} from "../../../../../prisma/prisma";
+import {prisma} from "../../../../../../persistent/src/lib/prisma/prisma";
 
 export async function GET(request: Request, {params}: { params: Promise<{ id: string }> }) {
     try {
