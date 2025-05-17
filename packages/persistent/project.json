@@ -1,0 +1,27 @@
+{
+  "name": "persistent",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/persistent/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/persistent",
+        "tsConfig": "packages/persistent/tsconfig.lib.json",
+        "packageJson": "packages/persistent/package.json",
+        "main": "packages/persistent/src/index.ts",
+        "assets": ["packages/persistent/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/persistent/jest.config.ts"
+      }
+    }
+  }
+}

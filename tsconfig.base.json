@@ -7,7 +7,8 @@
       "@autodev/context-worker": ["packages/context-worker/src/index.ts"],
       "@autodev/worker-core": ["packages/worker-core/src/index.ts"],
       "@autodev/worker-protobuf": ["packages/worker-protobuf/src/index.ts"],
-      "domain": ["packages/domain/src/index.ts"]
+      "domain": ["packages/domain/src/index.ts"],
+      "persistent": ["packages/persistent/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
