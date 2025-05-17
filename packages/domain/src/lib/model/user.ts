@@ -24,5 +24,7 @@ export class User implements Entity<string, UserDescription> {
   }
 }
 
+export type Users = HasMany<string, User>;
+
 
 export type UserProjects = HasMany<string, Project>
